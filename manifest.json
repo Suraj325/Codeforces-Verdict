@@ -1,0 +1,19 @@
+{
+  "name": "Codeforces-Verdict",
+  "description": "Codeforces-Verdict - to notify whether your solution is accepted or not",
+  "manifest_version": 2,
+  "version": "0.1",
+  "icons": {
+    "16": "download.png",
+    "48": "download.png",
+    "128": "download.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    { "matches": ["<all_urls>"], "js": ["jquery-3.6.0.min.js", "content.js"] }
+  ],
+  "permissions": ["notifications"]
+}
